@@ -1,0 +1,42 @@
+# Files already tracked by Git are not affected
+# Patterns which are specific to a particular repository but which do not need to be shared with other related repositories (,  e.g., auxiliary files that live inside the repository but are specific to one user’s workflow)
+# should go into the $GIT_DIR/info/exclude file.
+
+
+__pycache__
+
+.config/EasyConnect
+.config/nautilus
+.config/pulse
+.config/google-chrome
+.config/gnome-initial-setup-done
+.config/gedit
+.config/SogouPY
+.config/Code
+# .config/nvim
+
+# todo：设为git submodul ，不然同步时 会得到空目录，还无法重新装
+# https://github.com/tmux-plugins/tpm/issues/34
+# tmux/plugins
+
+.config/dconf/user
+
+# 输入法:
+.config/fcitx
+
+
+.config/google_chrome
+.config/gnome-session/
+
+# 变成了submodul？加不加这两行，都一样
+zplug
+
+.config/ptpython/history
+
+# Ctags
+tags
+
+.config/pudb/saved-breakpoin*
+.config/pudb/internal-cmdline-history.txt
+
+.config/coc/memos.json
